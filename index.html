@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mitchelle's Birthday Present</title>
+<meta name="description" content="A birthday present for Mitchelle. Tap to open.">
+<meta property="og:title" content="A present for Mitchelle">
+<meta property="og:description" content="Happy birthday! Tap to open your present.">
+<meta name="theme-color" content="#0B1631">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Bebas+Neue&family=Reenie+Beanie&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="pc" d="M4 4h5c0-2 1.3-3 3-3s3 1 3 3h5v5c2 0 3 1.3 3 3s-1 3-3 3v5h-5c0-2-1.3-3-3-3s-3 1-3 3H4v-5c2 0 3-1.3 3-3S6 9 4 9z"/>
+  </defs>
+</svg>
+
+<main>
+  <div class="stage" id="stage">
+    <canvas class="sparkles" id="sparkles" aria-hidden="true"></canvas>
+    <p class="stage-kicker">Something for you, Mitchelle</p>
+    <div class="gift-scene" id="scene">
+      <span class="glow" aria-hidden="true"></span>
+      <span class="rays" aria-hidden="true"></span>
+      <button class="gift" id="gift" type="button" aria-label="Open your birthday present">
+        <span class="lid">
+          <span class="lid-top"><span class="ribbon-v"></span></span>
+          <span class="ribbon-v"></span>
+          <svg class="bow" viewBox="0 0 160 112" aria-hidden="true">
+            <path d="M75 60 42 100l11-1 2 11 27-48z" fill="#C8952A"/>
+            <path d="M85 60l33 40-11-1-2 11-27-48z" fill="#D9A63A"/>
+            <g class="bow-loop left">
+              <path d="M80 58C62 30 22 6 12 22c-9 15 30 36 68 36z" fill="#E9B949"/>
+              <path d="M80 58C66 38 36 22 28 29c-6 6 22 23 52 29z" fill="#C8952A" opacity=".55"/>
+              <path d="M40 20c-10-4-20-2-22 4" fill="none" stroke="#F8DE97" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+            </g>
+            <g class="bow-loop right">
+              <path d="M80 58C98 30 138 6 148 22c9 15-30 36-68 36z" fill="#E9B949"/>
+              <path d="M80 58c14-20 44-36 52-29 6 6-22 23-52 29z" fill="#C8952A" opacity=".55"/>
+              <path d="M120 20c10-4 20-2 22 4" fill="none" stroke="#F8DE97" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+            </g>
+            <rect x="68" y="46" width="24" height="22" rx="7" fill="#D9A63A"/>
+            <rect x="72" y="49" width="10" height="5" rx="2.5" fill="#F8DE97" opacity=".7"/>
+          </svg>
+        </span>
+        <span class="inner-light" aria-hidden="true"></span>
+        <span class="box-body"><span class="ribbon-v"></span><span class="sheen"></span></span>
+        <span class="tag">For Mitchelle</span>
+      </button>
+      <span class="floor" aria-hidden="true"></span>
+    </div>
+    <p class="tap-hint">Tap the present to open it</p>
+  </div>
+
+  <article class="card" id="card" hidden>
+    <nav class="pages-nav" aria-label="Card pages">
+      <button type="button" class="page-tab" data-page="1" aria-pressed="true">Your card</button>
+      <button type="button" class="page-tab" data-page="2" aria-pressed="false">Your wins</button>
+    </nav>
+
+    <div class="page" id="page1">
+    <header class="hello">
+      <p class="hello-kicker">A little late, with a lot of love</p>
+      <h1>Happy Birthday</h1>
+      <span class="name">Mitchelle</span>
+    </header>
+
+    <p class="lead">You've spent so long looking after everyone else, so today it's your turn to be spoiled. This little present is all for you.</p>
+
+    <div class="rule" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><use href="#pc" fill="#2E56C7"/></svg>
+      <svg viewBox="0 0 24 24"><use href="#pc" fill="#E9B949"/></svg>
+      <svg viewBox="0 0 24 24"><use href="#pc" fill="#3FA36B"/></svg>
+    </div>
+
+    <section>
+      <h2>You found my missing piece</h2>
+      <p>You always talk about young people getting the right support at the right time. I know exactly what that looks like, because you did it for me. You showed up, you listened, and you made me feel like family.</p>
+      <p>You've been like a mum to me. I don't say thank you for that nearly enough, so here it is, properly: thank you, for all of it.</p>
+    </section>
+
+    <section>
+      <h2>Look what you've built</h2>
+      <p>Jigsaw-GC started with one belief: that young people can build brighter futures if someone is in their corner. Now it's mentoring, counselling, the Legacy Youth Awards, and young people all over London whose lives are heading somewhere better because you backed them.</p>
+    </section>
+
+    <section class="proud">
+      <h2>I'm so proud of you</h2>
+      <p>I'm really, really proud of you. Proud of everything you've done, and of everything you've taught me along the way. You taught me how to show up for people, how to keep going when things get hard, and that where you start doesn't decide where you end up. A lot of who I am today comes from you, and I'll carry what you've taught me into everything I do.</p>
+    </section>
+
+    <section>
+      <h2>What I wish for you this year</h2>
+      <ul class="wishes">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#2E56C7"/></svg><span>Real rest, the kind you actually take instead of just talking about.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#E9B949"/></svg><span>All the care you give out, coming straight back to you.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#3FA36B"/></svg><span>Jigsaw-GC growing even bigger, with you enjoying every bit of it.</span></li>
+      </ul>
+    </section>
+
+    <div class="puzzle-wrap">
+      <h2>One last piece</h2>
+      <p>Every puzzle needs the piece that holds it together. In mine, that's you.</p>
+      <canvas id="puzzle" role="img" aria-label="A jigsaw puzzle that assembles into a photo of Mitchelle"></canvas>
+      <img class="print-photo" src="assets/mitchelle.jpg" alt="Mitchelle">
+      <button class="again" id="again" type="button">Put it together again</button>
+    </div>
+
+    <section class="note-wrap">
+      <h2>In my own words</h2>
+      <div class="note">
+        <p>hey mitch thank you for everything every day i struggle i know i have a place to go and someone to turn to youve helped me become the person i am today</p>
+        <p>im really glad that youve been here for me and everyone that need it im sorry i didnt wish you happy brithdya on the day this message im writing wasnt fixed by ai you can probs tell from how shit the grammer is but i wanted to say thank you and i love you</p>
+      </div>
+    </section>
+
+    <div class="signoff">
+      <p>Happy birthday. You deserve every bit of it.</p>
+      <p class="love">Love you lots, Raf</p>
+    </div>
+
+    <div class="turn">
+      <button type="button" class="turn-btn" data-page="2">See everything you've achieved <span aria-hidden="true">→</span></button>
+    </div>
+    </div>
+
+    <div class="page" id="page2" hidden>
+      <header class="hello">
+        <p class="hello-kicker">Mitchelle Greenaway</p>
+        <h1>Look at everything you've done</h1>
+      </header>
+      <p class="lead">This is a list of your wins, in one place, so you can see them all at once. It's a long list, and it keeps growing.</p>
+
+      <div class="stats">
+        <div class="stat"><span class="stat-num">20+</span><span class="stat-label">years in education, mentoring and therapy</span></div>
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-label">young people supported by Jigsaw-GC every year</span></div>
+        <div class="stat"><span class="stat-num">90%</span><span class="stat-label">positive engagement rate from young people</span></div>
+        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">London boroughs reached</span></div>
+      </div>
+
+      <section class="wins">
+        <h3>Qualified three times over</h3>
+        <ul class="wishes">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#2E56C7"/></svg><span><strong>Psychotherapist.</strong> Fully qualified, and trusted with young people's hardest moments.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#2E56C7"/></svg><span><strong>Counsellor.</strong> Giving young people and families a safe place to be heard.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#2E56C7"/></svg><span><strong>Life coach.</strong> Helping people believe in what's possible for them again.</span></li>
+        </ul>
+      </section>
+
+      <section class="wins">
+        <h3>Two organisations, built from scratch</h3>
+        <ul class="wishes">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#E9B949"/></svg><span><strong>Co-founder and Managing Director of Jigsaw-GC CIC.</strong> Mentoring, counselling and early intervention for young people across London.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#E9B949"/></svg><span><strong>Founder and Director of REM Wellbeing Ltd.</strong> Your own wellbeing practice, alongside everything else.</span></li>
+        </ul>
+      </section>
+
+      <section class="wins">
+        <h3>Programmes that change lives</h3>
+        <ul class="wishes">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#3FA36B"/></svg><span><strong>The Legacy Youth Awards.</strong> Jigsaw-GC's flagship awards, designed and delivered by young people, celebrating stories that usually go untold.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#3FA36B"/></svg><span><strong>After Taste.</strong> Young finalists showing their food, creativity and personal journeys, with the Beyond the Plate celebration for the 2026 final.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#3FA36B"/></svg><span><strong>Young Ambassadors.</strong> Young people with a real voice in shaping Jigsaw-GC's programmes.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#3FA36B"/></svg><span><strong>Peer mentoring.</strong> Trained young mentors using their own lived experience to guide others.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#3FA36B"/></svg><span><strong>Support in schools.</strong> In-school mentoring and counselling that improve attendance and reduce exclusions.</span></li>
+        </ul>
+      </section>
+
+      <section class="wins">
+        <h3>Families, too</h3>
+        <ul class="wishes">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pc" fill="#5B7FE0"/></svg><span><strong>35+ parents and carers supported.</strong> 85% saw their family relationships improve, and 89% felt more confident supporting their child.</span></li>
+        </ul>
+      </section>
+
+      <section class="wins wins-last">
+        <h3>And one that isn't on any website</h3>
+        <p>Taking me in like family, and helping make me who I am. That one's my favourite.</p>
+      </section>
+
+      <div class="turn">
+        <button type="button" class="turn-btn" data-page="1"><span aria-hidden="true">←</span> Back to your card</button>
+      </div>
+    </div>
+  </article>
+
+  <p class="footer-note" id="footer" hidden><button type="button" id="rewrap">Wrap the present back up</button></p>
+</main>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
